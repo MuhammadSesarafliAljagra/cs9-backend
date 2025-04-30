@@ -1,6 +1,6 @@
 const userRepository = require("../repositories/userRepository");
 const responseFormatter = require("../utils/responseFormatter");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 
 const registerUser = async (req, res) => {
   try {
