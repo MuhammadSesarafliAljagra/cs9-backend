@@ -19,9 +19,7 @@ app.use("/user", require("../src/routes/userRoute"));
 app.use("/item", require("../src/routes/item.routes"));
 app.use("/transaction", require("../src/routes/transactionRoute"));
 
-app.get("/", (req, res) => {
-  res.send("API is running...");
-});
+app.get("/", (req, res) => res.send("Express on Vercel"));
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
